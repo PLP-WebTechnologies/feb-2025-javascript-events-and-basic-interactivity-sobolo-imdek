@@ -1,0 +1,119 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    border: none;
+    background-color: #6200ea;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hover effect on button */
+button:hover {
+    transform: scale(1.1); /* Button grows slightly when hovered */
+    background-color: #3700b3; /* Darker shade of purple */
+}
+
+/* Hover effect box */
+#myElement {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+#myElement:hover {
+    background-color: #ffeb3b; /* Yellow background on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Form styling */
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Slideshow */
+#slideshowImage {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Real-time feedback for password */
+#passwordFeedback {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #slideshowImage {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    #slideshowImage {
+        width: 100%;
+    }
+}
